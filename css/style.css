@@ -1,0 +1,47 @@
+ .media_container{
+  background: white;
+}
+
+.media_type {
+  font-size: 20px;
+  color: blue;
+}
+
+.media_screen {
+  border: 2px solid black;
+}
+
+/*Extra small device (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .media_screen {
+    background: #870000;
+  }
+}
+
+/*Small device (landscape phone, 576 and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .media_screen {
+    background: red;
+  }
+}
+
+/*Medium device (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .media_screen {
+    background: blue;
+  }
+}
+
+/*Large device (desktop, 992 and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .media_screen {
+    background: yellow;
+  }
+}
+
+/*Extra large device (large desktop, 1200px and up)*/
+@media (min-width: 1200px) {
+  .media_screen {
+    background: green;
+  }
+}
