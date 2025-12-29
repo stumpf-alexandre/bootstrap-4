@@ -211,10 +211,10 @@
   <!--Posicionamento fixo - top e bottom-->
   <h2>Posicionamento fixo</h2>
   <br>
-  <h3 class="bg-success fixed-top">Título do conteúdo fixo</h3>
+  <h3 class="bg-success fixed-top pt-5">Título do conteúdo fixo no topo</h3>
   <p><span class="bg-success">Este texto possui um titulo fixo na parte superior da página</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate odio, fugit aliquam architecto laudantium tempora voluptatum quam iste doloribus odit iure corporis praesentium enim repellendus illo adipisci officiis dicta.</p>
 
-  <h3 class="bg-info fixed-bottom">Título do conteúdo fixo</h3>
+  <h3 class="bg-info fixed-bottom pb-5">Título do conteúdo fixo na base</h3>
   <p><span class="bg-info">Este texto possui um titulo fixo na parte superior da página</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate odio, fugit aliquam architecto laudantium tempora voluptatum quam iste doloribus odit iure corporis praesentium enim repellendus illo adipisci officiis dicta.</p>
   <br>
   <br>
@@ -255,7 +255,7 @@
 
   <!--Colar no topo (sticky)-->
   <h2>Colar no Topo (Sticky)</h2>
-  <ul class="list-inline bg-warning sticky-top" style="padding-top: 46px;">
+  <ul class="list-inline bg-warning sticky-top" style="padding-top: 96px;">
     <li class="list-inline-item">Item 1</li>
     <li class="list-inline-item">Item 2</li>
     <li class="list-inline-item">Item 3</li>
@@ -1654,6 +1654,311 @@
       </form>
     </div>
   </nav>
+    <br>
+  <h2>Barra de Navegação com Formulário</h2>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <!--logo-->
+    <a href="" class="navbar-brand">Logo Chalé</a>
+
+    <!--menu hamburguer-->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target2">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--navegação-->
+    <div class="collapse navbar-collapse" id="nav-target2">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Serviços</a>
+        </li>
+      </ul>
+
+      <!--formulário-->
+      <form class="form-inline">
+        <input class="form-control" type="text" placeholder="Pesquisar...">
+        <button class="btn btn-outline-success">ok</button>
+      </form>
+    </div>
+  </nav>
+  <br>
+  <h2>Cores no Menu</h2>
+  <br>
+  <!--Cores
+  opções: bg-primary, bg-secondary, bg-success, bg-info, bg-warning, bg-danger, bg-light, bg-dark-->
+  <h3>Cores Secondary</h3>
+  <nav class="navbar navbar-expand-sm navbar-secondary bg-secondary">
+    <!--logo-->
+    <a href="" class="navbar-brand">Logo Chalé</a>
+
+    <!--menu hamburguer-->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target4">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--navegação-->
+    <div class="collapse navbar-collapse" id="nav-target4">
+      <ul class="navbar-nav ml-auto" id="ancora2">
+        <li class="nav-item">
+          <a href="" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#ancora2">Serviços</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Serviço 1</a>
+            <a class="dropdown-item" href="">Serviço 2</a>
+            <a class="dropdown-item" href="">Serviço 3</a>
+          </div>
+        </li>
+      </ul>
+
+      <!--formulário-->
+      <form class="form-inline">
+        <input class="form-control" type="text" placeholder="Pesquisar...">
+        <button class="btn btn-outline-success">ok</button>
+      </form>
+    </div>
+  </nav>
+  <br>
+  <h3>Cores Success</h3>
+  <nav class="navbar navbar-expand-sm navbar-success bg-success">
+    <!--logo-->
+    <a href="" class="navbar-brand">Logo Chalé</a>
+
+    <!--menu hamburguer-->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target5">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--navegação-->
+    <div class="collapse navbar-collapse" id="nav-target5">
+      <ul class="navbar-nav ml-auto" id="ancora3">
+        <li class="nav-item">
+          <a href="" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#ancora3">Serviços</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Serviço 1</a>
+            <a class="dropdown-item" href="">Serviço 2</a>
+            <a class="dropdown-item" href="">Serviço 3</a>
+          </div>
+        </li>
+      </ul>
+
+      <!--formulário-->
+      <form class="form-inline">
+        <input class="form-control" type="text" placeholder="Pesquisar...">
+        <button class="btn btn-outline-success">ok</button>
+      </form>
+    </div>
+  </nav>
+  <br>
+  <h3>Cores Dark</h3>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <!--logo-->
+    <a href="" class="navbar-brand">Logo Chalé</a>
+
+    <!--menu hamburguer-->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target6">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--navegação-->
+    <div class="collapse navbar-collapse" id="nav-target6">
+      <ul class="navbar-nav ml-auto" id="ancora4">
+        <li class="nav-item">
+          <a href="" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#ancora4">Serviços</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Serviço 1</a>
+            <a class="dropdown-item" href="">Serviço 2</a>
+            <a class="dropdown-item" href="">Serviço 3</a>
+          </div>
+        </li>
+      </ul>
+
+      <!--formulário-->
+      <form class="form-inline">
+        <input class="form-control" type="text" placeholder="Pesquisar...">
+        <button class="btn btn-outline-success">ok</button>
+      </form>
+    </div>
+  </nav>
+  <br>
+  <h3>Cores Dark</h3>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <!--logo-->
+    <a href="" class="navbar-brand">Logo Chalé</a>
+
+    <!--menu hamburguer-->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target6">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--navegação-->
+    <div class="collapse navbar-collapse" id="nav-target6">
+      <ul class="navbar-nav ml-auto" id="ancora4">
+        <li class="nav-item">
+          <a href="" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#ancora4">Serviços</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Serviço 1</a>
+            <a class="dropdown-item" href="">Serviço 2</a>
+            <a class="dropdown-item" href="">Serviço 3</a>
+          </div>
+        </li>
+      </ul>
+
+      <!--formulário-->
+      <form class="form-inline">
+        <input class="form-control" type="text" placeholder="Pesquisar...">
+        <button class="btn btn-outline-success">ok</button>
+      </form>
+    </div>
+  </nav>
+  <br>
+  <h2>Alinhamentos</h2>
+  <!--Alinhamentos
+  opções: fixed-top, fixed-bottom, sticky-->
+  <br>
+  <h3>Alinhamentos no Topo</h3>
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+    <!--logo-->
+    <a href="" class="navbar-brand">Navbar Fixo Topo</a>
+
+    <!--menu hamburguer-->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target7">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--navegação-->
+    <div class="collapse navbar-collapse" id="nav-target7">
+      <ul class="navbar-nav ml-auto" id="ancora5">
+        <li class="nav-item">
+          <a href="" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#ancora5">Serviços</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Serviço 1</a>
+            <a class="dropdown-item" href="">Serviço 2</a>
+            <a class="dropdown-item" href="">Serviço 3</a>
+          </div>
+        </li>
+      </ul>
+
+      <!--formulário-->
+      <form class="form-inline">
+        <input class="form-control" type="text" placeholder="Pesquisar...">
+        <button class="btn btn-outline-success">ok</button>
+      </form>
+    </div>
+  </nav>
+  <br>
+  <h3>Alinhamentos na Base</h3>
+  <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+    <!--logo-->
+    <a href="" class="navbar-brand">Navbar Fixo Base</a>
+
+    <!--menu hamburguer-->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target7">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--navegação-->
+    <div class="collapse navbar-collapse" id="nav-target7">
+      <ul class="navbar-nav ml-auto" id="ancora5">
+        <li class="nav-item">
+          <a href="" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#ancora5">Serviços</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Serviço 1</a>
+            <a class="dropdown-item" href="">Serviço 2</a>
+            <a class="dropdown-item" href="">Serviço 3</a>
+          </div>
+        </li>
+      </ul>
+
+      <!--formulário-->
+      <form class="form-inline">
+        <input class="form-control" type="text" placeholder="Pesquisar...">
+        <button class="btn btn-outline-success">ok</button>
+      </form>
+    </div>
+  </nav>
+  <br>
+  <h3>Alinhamentos no Topo Quando o Menu Chegar no Mesmo</h3>
+  <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-success m-5 p-5">
+    <!--logo-->
+    <a href="" class="navbar-brand">Navbar Fixo Quando Alinhar com o Topo</a>
+
+    <!--menu hamburguer-->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target7">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--navegação-->
+    <div class="collapse navbar-collapse" id="nav-target7">
+      <ul class="navbar-nav ml-auto" id="ancora5">
+        <li class="nav-item">
+          <a href="" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#ancora5">Serviços</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Serviço 1</a>
+            <a class="dropdown-item" href="">Serviço 2</a>
+            <a class="dropdown-item" href="">Serviço 3</a>
+          </div>
+        </li>
+      </ul>
+
+      <!--formulário-->
+      <form class="form-inline">
+        <input class="form-control" type="text" placeholder="Pesquisar...">
+        <button class="btn btn-outline-success">ok</button>
+      </form>
+    </div>
+  </nav>
+  <br>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente placeat, error non eaque quidem numquam nesciunt deserunt provident! Aut harum saepe libero quos a. Reprehenderit fugiat incidunt magnam facere neque!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente placeat, error non eaque quidem numquam nesciunt deserunt provident! Aut harum saepe libero quos a. Reprehenderit fugiat incidunt magnam facere neque!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente placeat, error non eaque quidem numquam nesciunt deserunt provident! Aut harum saepe libero quos a. Reprehenderit fugiat incidunt magnam facere neque!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente placeat, error non eaque quidem numquam nesciunt deserunt provident! Aut harum saepe libero quos a. Reprehenderit fugiat incidunt magnam facere neque!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente placeat, error non eaque quidem numquam nesciunt deserunt provident! Aut harum saepe libero quos a. Reprehenderit fugiat incidunt magnam facere neque!</p>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
