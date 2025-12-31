@@ -2016,208 +2016,295 @@
   classe: badge-<opções>
     opções: primary, secondary, success, info, warning, danger, light, dark
     -->
-    <ul class="list-group">
-      <li class="list-group-item">
-        Total
-        <span class="badge badge-danger">163</span>
-      </li>
-      <li class="list-group-item">
-        Caixa saida
-        <span class="badge badge-warning">38</span>
-      </li>
-      <li class="list-group-item">
-        Caixa entrada
-        <span class="badge badge-primary">120</span>
-      </li>
-      <li class="list-group-item">
-        Rascunho
-        <span class="badge badge-info">5</span>
-      </li>
-    </ul>
-    <br>
-    <h2>Breadcrumb</h2>
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">Home</li>
-    </ol>
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="">Home</a>
-      </li>
-      <li class="breadcrumb-item">Notícias</li>
-    </ol>
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="">Home</a>
-      </li>
-      <li class="breadcrumb-item">
-        <a href="">Usuário</a>
-      </li>
-      <li class="breadcrumb-item">
-        Alexandre Stumpf
-      </li>
-    </ol>
-    <br>
-    <h1>Formulário</h1>
-    <!--formularios
+  <ul class="list-group">
+    <li class="list-group-item">
+      Total
+      <span class="badge badge-danger">163</span>
+    </li>
+    <li class="list-group-item">
+      Caixa saida
+      <span class="badge badge-warning">38</span>
+    </li>
+    <li class="list-group-item">
+      Caixa entrada
+      <span class="badge badge-primary">120</span>
+    </li>
+    <li class="list-group-item">
+      Rascunho
+      <span class="badge badge-info">5</span>
+    </li>
+  </ul>
+  <br>
+  <h2>Breadcrumb</h2>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">Home</li>
+  </ol>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="">Home</a>
+    </li>
+    <li class="breadcrumb-item">Notícias</li>
+  </ol>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="">Home</a>
+    </li>
+    <li class="breadcrumb-item">
+      <a href="">Usuário</a>
+    </li>
+    <li class="breadcrumb-item">
+      Alexandre Stumpf
+    </li>
+  </ol>
+  <br>
+  <h1>Formulário</h1>
+  <!--formularios
     classes: form-control-<opções>
     opções: sm, lg-->
-    <form>
-      <!--caixa de texto-->
-      <h2>Caixa de Texto</h2>
-      <div class="form-group">
-        <label for="usuario">Usuário</label>
-        <input class="form-control form-control-lg" type="text" id="usuario" placeholder="Digite seu usuário">
-      </div>
-      <div class="form-group">
-        <label for="email">E-mail</label>
-        <input class="form-control form-control-sm" type="email" id="email" placeholder="Digite seu e-mail" readonly>
-        <small class="form-text">E-mail será validado</small>
-      </div>
+  <form>
+    <!--caixa de texto-->
+    <h2>Caixa de Texto</h2>
+    <div class="form-group">
+      <label for="usuario">Usuário</label>
+      <input class="form-control form-control-lg" type="text" id="usuario" placeholder="Digite seu usuário">
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input class="form-control form-control-sm" type="email" id="email" placeholder="Digite seu e-mail" readonly>
+      <small class="form-text">E-mail será validado</small>
+    </div>
 
-      <!--select-->
-      <h2>Select</h2>
-      <div class="form-group">
-        <label for="estado">Estado</label>
-        <select class="form-control" id="estado">
-          <option>Acre</option>
-          <option>Alagoas</option>
-          <option>Amapá</option>
-          <option>...</option>
-        </select>
-      </div>
+    <!--select-->
+    <h2>Select</h2>
+    <div class="form-group">
+      <label for="estado">Estado</label>
+      <select class="form-control" id="estado">
+        <option>Acre</option>
+        <option>Alagoas</option>
+        <option>Amapá</option>
+        <option>...</option>
+      </select>
+    </div>
 
-      <!--textarea-->
-      <h2>Textarea</h2>
-      <div class="form-group">
-        <label for="mensagem">Mensagem</label>
-        <textarea class="form-control" id="mensagem" rows="3"></textarea>
-      </div>
+    <!--textarea-->
+    <h2>Textarea</h2>
+    <div class="form-group">
+      <label for="mensagem">Mensagem</label>
+      <textarea class="form-control" id="mensagem" rows="3"></textarea>
+    </div>
 
-      <!--file input-->
-      <h2>File Input</h2>
-      <div class="form-group">
-        <label for="arquivo">Arquivo</label>
-        <input class="form-control-file" type="file" id="arquivo">
-      </div>
+    <!--file input-->
+    <h2>File Input</h2>
+    <div class="form-group">
+      <label for="arquivo">Arquivo</label>
+      <input class="form-control-file" type="file" id="arquivo">
+    </div>
 
-      <!--custom file input-->
-      <div class="custom-file">
-        <input class="custom-file-input" type="file" id="arquivo">
-        <label class="custom-file-label">Selecione arquivo</label>
-      </div>
+    <!--custom file input-->
+    <div class="custom-file">
+      <input class="custom-file-input" type="file" id="arquivo">
+      <label class="custom-file-label">Selecione arquivo</label>
+    </div>
 
-      <!--range-->
-      <h2>Range</h2>
-      <div class="form-group">
-        <label id="range">Satisfação</label>
-        <input class="custom-range" type="range" id="range" min="1" max="5">
-      </div>
+    <!--range-->
+    <h2>Range</h2>
+    <div class="form-group">
+      <label id="range">Satisfação</label>
+      <input class="custom-range" type="range" id="range" min="1" max="5">
+    </div>
 
-      <!--button-->
-      <input class="btn btn-primary" type="submit" value="Salvar">
-    </form>
-    <br>
-    <br>
-    <h2>Formulario Inline</h2>
-    <form class="form-inline">
-      <input class="form-control mr-2" type="text" placeholder="Digite seu usuário">
-      <input class="form-control mr-2" type="password" placeholder="Digite sua senha">
-      <input class="btn btn-primary" type="submit" value="Logar">
-    </form>
-    <br>
-    <br>
-    <!--validação de formulario
+    <!--button-->
+    <input class="btn btn-primary" type="submit" value="Salvar">
+  </form>
+  <br>
+  <br>
+  <h2>Formulario Inline</h2>
+  <form class="form-inline">
+    <input class="form-control mr-2" type="text" placeholder="Digite seu usuário">
+    <input class="form-control mr-2" type="password" placeholder="Digite sua senha">
+    <input class="btn btn-primary" type="submit" value="Logar">
+  </form>
+  <br>
+  <br>
+  <!--validação de formulario
     Classes: is-valid, is-invalid, invalid-feedback, valid-feedback
     -->
-    <h2>Validação de Formulários</h2>
-    <form>
-      <div class="form-group">
-        <label for="email-usuario">E-mail</label>
-        <input class="form-control is-valid" type="email" id="email-usuario" placeholder="Digite seu e-mail">
-        <div class="valid-feedback">E-mail válida</div>
-      </div>
+  <h2>Validação de Formulários</h2>
+  <form>
+    <div class="form-group">
+      <label for="email-usuario">E-mail</label>
+      <input class="form-control is-valid" type="email" id="email-usuario" placeholder="Digite seu e-mail">
+      <div class="valid-feedback">E-mail válida</div>
+    </div>
 
-      <div class="form-group">
-        <label for="senha-usuario">Senha</label>
-        <input class="form-control is-invalid" type="senha" id="senha-usuario" placeholder="Digite sua senha">
-        <div class="invalid-feedback">Senha inválida</div>
+    <div class="form-group">
+      <label for="senha-usuario">Senha</label>
+      <input class="form-control is-invalid" type="senha" id="senha-usuario" placeholder="Digite sua senha">
+      <div class="invalid-feedback">Senha inválida</div>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Logar">
+  </form>
+  <br>
+  <h1>Input Group</h1>
+  <br>
+  <form>
+    <h2>Grupo Prepend</h2>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">@</span>
       </div>
-      <input class="btn btn-primary" type="submit" value="Logar">
-    </form>
+      <input class="form-control" type="text" placeholder="e-mail">
+    </div>
     <br>
-    <h1>Input Group</h1>
+    <h2>Grupo Append</h2>
+    <div class="input-group">
+      <input class="form-control" type="text" placeholder="e-mail">
+      <div class="input-group-append">
+        <span class="input-group-text">@gmail.com</span>
+      </div>
+    </div>
     <br>
-    <form>
-      <h2>Grupo Prepend</h2>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text">@</span>
-        </div>
-        <input class="form-control" type="text" placeholder="e-mail">
+    <h2>URL Customizada</h2>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">https://site.com/usuario/</span>
       </div>
-      <br>
-      <h2>Grupo Append</h2>
-      <div class="input-group">
-        <input class="form-control" type="text" placeholder="e-mail">
-        <div class="input-group-append">
-          <span class="input-group-text">@gmail.com</span>
-        </div>
+      <input class="form-control" type="text" placeholder="Digite seu usuário">
+    </div>
+    <br>
+    <h2>Moedas</h2>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">$</span>
       </div>
-      <br>
-      <h2>URL Customizada</h2>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text">https://site.com/usuario/</span>
-        </div>
-        <input class="form-control" type="text" placeholder="Digite seu usuário">
+      <input class="form-control" type="text" placeholder="Digite um valor">
+      <div class="input-group-append">
+        <span class="input-group-text">,00</span>
       </div>
-      <br>
-      <h2>Moedas</h2>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text">$</span>
-        </div>
-        <input class="form-control" type="text" placeholder="Digite um valor">
-        <div class="input-group-append">
-          <span class="input-group-text">,00</span>
+    </div>
+    <br>
+    <h2>Checkbox / Radio</h2>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <input type="radio">
         </div>
       </div>
-      <br>
-      <h2>Checkbox / Radio</h2>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">
-            <input type="radio">
-          </div>
-        </div>
-        <input type="text" class="form-control">
-      </div>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">
-            <input type="checkbox">
-          </div>
-        </div>
-        <input type="text" class="form-control">
-      </div>
-      <br>
-      <h2>Múltiplos Inputs</h2>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text">nome/e-mail</span>
-        </div>
-        <input class="form-control" type="email" placeholder="e-mail">
-        <input class="form-control" type="password" placeholder="senha">
-      </div>
-      <br>
-      <h2>Pesquisas</h2>
-      <div class="input-group">
-        <input class="form-control" type="text" placeholder="Pesquisar">
-        <div class="input-group-append">
-          <button class="btn btn-warning" type="button">Pesquisar</button>
+      <input type="text" class="form-control">
+    </div>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <input type="checkbox">
         </div>
       </div>
-    </form>
+      <input type="text" class="form-control">
+    </div>
+    <br>
+    <h2>Múltiplos Inputs</h2>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">nome/e-mail</span>
+      </div>
+      <input class="form-control" type="email" placeholder="e-mail">
+      <input class="form-control" type="password" placeholder="senha">
+    </div>
+    <br>
+    <h2>Pesquisas</h2>
+    <div class="input-group">
+      <input class="form-control" type="text" placeholder="Pesquisar">
+      <div class="input-group-append">
+        <button class="btn btn-warning" type="button">Pesquisar</button>
+      </div>
+    </div>
+  </form>
+  <br>
+  <br>
+  <h1>Alertas e Barra de Progresso</h1>
+  <br>
+  <h2>Alertas</h2>
+  <div class="alert alert-primary">
+    <strong>Primary</strong> você tem uma postagem pendente!
+  </div>
+  <br>
+  <div class="alert alert-secondary">
+    <strong>Secondary</strong> você tem uma postagem pendente!
+  </div>
+  <br>
+  <div class="alert alert-success">
+    <strong>Success</strong> você tem uma postagem pendente!
+  </div>
+  <br>
+  <div class="alert alert-danger">
+    <strong>Danger</strong> você tem uma postagem pendente!
+  </div>
+  <br>
+  <div class="alert alert-warning">
+    <strong>Warning</strong> você tem uma postagem pendente!
+  </div>
+  <br>
+  <div class="alert alert-info">
+    <strong>Info</strong> você tem uma postagem pendente!
+  </div>
+  <br>
+  <div class="alert alert-light">
+    <strong>Light</strong> você tem uma postagem pendente!
+  </div>
+  <br>
+  <div class="alert alert-dark">
+    <strong>Dark</strong> você tem uma postagem pendente!
+  </div>
+  <br>
+  <h2>Alerta com botão fechar</h2>
+  <div class="alert alert-success alert-dismissible">
+    <button class="close" type="button" data-dismiss="alert">
+      &times;
+    </button>
+    <strong>Fechar</strong> Alerta com botão fechar!
+  </div>
+  <br>
+  <h2>Alerta com Mais Conteudo</h2>
+  <div class="alert alert-dark">
+    <h4>Título</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio consequuntur veniam eum alias hic, nulla minus praesentium, recusandae corrupti, ut ratione vel quas delectus quasi suscipit debitis nam provident saepe?</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus earum molestiae dolores! Odio, voluptatibus voluptatum, repellat hic ipsam voluptas provident, animi totam similique voluptates vero eum ex praesentium voluptate esse?</p>
+  </div>
+  <br>
+  <h2>Barra de Progresso</h2>
+  <div class="progress">
+    <div class="progress-bar" style="width: 45%;">45%</div>
+  </div>
+  <br>
+  <div class="progress">
+    <div class="progress-bar bg-success" style="width: 25%;">25%</div>
+  </div>
+  <br>
+  <h3>Altura</h3>
+  <div class="progress" style="height: 2px;">
+    <div class="progress-bar bg-warning" style="width: 68%;">68%</div>
+  </div>
+  <br>
+  <div class="progress" style="height: 30px;">
+    <div class="progress-bar bg-danger" style="width: 98%;">98%</div>
+  </div>
+  <br>
+  <h3>Listrado</h3>
+  <div class="progress">
+    <div class="progress-bar bg-info progress-bar-striped" style="width: 70%;">70%</div>
+  </div>
+  <br>
+  <h3>Animado</h3>
+  <div class="progress">
+    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 70%;">70%</div>
+  </div>
+  <br>
+  <h3>Multiplas Barras</h3>
+  <div class="progress">
+    <div class="progress-bar bg-success" style="width: 7%;">Painel Principal(7%)</div>
+    <div class="progress-bar bg-danger" style="width: 30%;">Fotos(30%)</div>
+    <div class="progress-bar bg-warning" style="width: 15%;">Configurações(15%)</div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
