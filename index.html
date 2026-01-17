@@ -3312,6 +3312,93 @@
       </div>
     </div>
   </div>
+  <br>
+  <br>
+  <h1>Alinhamento no Grid</h1>
+  <br>
+  <div class="container">
+    <h2>Alinhamento vertical(align-items-ALINHAMENTO: start, center, end)</h2>
+    <h3>Alinhando no topo do container</h3>
+    <div class="marcadores row align-items-start">
+      <div class="col borda">Área 1</div>
+      <div class="col borda">Área 2</div>
+      <div class="col borda">Área 3</div>
+    </div>
+    <br>
+    <h3>Alinhando no centro do container</h3>
+    <div class="marcadores row align-items-center">
+      <div class="col borda">Área 1</div>
+      <div class="col borda">Área 2</div>
+      <div class="col borda">Área 3</div>
+    </div>
+    <br>
+    <h3>Alinhando na base do container</h3>
+    <div class="marcadores row align-items-end">
+      <div class="col borda">Área 1</div>
+      <div class="col borda">Área 2</div>
+      <div class="col borda">Área 3</div>
+    </div>
+    <br>
+    <h2>Alinhamento vertical individual(align-self-ALINHAMENTO: start, center, end)</h2>
+    <h3>Alinhamento individual dos flex items</h3>
+    <div class="marcadores row">
+      <div class="col borda align-self-start">Área 1 alinhada no topo</div>
+      <div class="col borda align-self-center">Área 2 alinhada no centro</div>
+      <div class="col borda align-self-end">Área 3 alinhada na base</div>
+    </div>
+    <br>
+    <h2>Alinhamento horizontal colunas(justify-content-ALINHAMENTO: start, center, end)</h2>
+    <h3>Alinhando à esquerda</h3>
+    <div class="row justify-content-start borda">
+      <div class="marcadores col-2">Área 1</div>
+      <div class="marcadores col-2">Área 2</div>
+      <div class="marcadores col-2">Área 3</div>
+    </div>
+    <br>
+    <h3>Alinhando ao centro</h3>
+    <div class="row justify-content-center borda">
+      <div class="marcadores col-2">Área 1</div>
+      <div class="marcadores col-2">Área 2</div>
+      <div class="marcadores col-2">Área 3</div>
+    </div>
+    <br>
+    <h3>Alinhando à direita</h3>
+    <div class="row justify-content-end borda">
+      <div class="marcadores col-2">Área 1</div>
+      <div class="marcadores col-2">Área 2</div>
+      <div class="marcadores col-2">Área 3</div>
+    </div>
+    <br>
+    <h2>Distribuição (justify-content-ALINHAMENTO: around, between)</h2>
+    <h3>Espaçamento ao redor das áreas (Around)</h3>
+    <div class="row borda justify-content-around">
+      <div class="marcadores col-2">Área 1</div>
+      <div class="marcadores col-2">Área 2</div>
+      <div class="marcadores col-2">Área 3</div>
+    </div>
+    <br>
+    <h3>Espaçamento entre as áreas (Between)</h3>
+    <div class="row borda justify-content-between">
+      <div class="marcadores col-2">Área 1</div>
+      <div class="marcadores col-2">Área 2</div>
+      <div class="marcadores col-2">Área 3</div>
+    </div>
+    <br>
+    <h2>Removendo espaçamento</h2>
+    <h3>Com espaçamento</h3>
+    <div class="row">
+      <div class="borda col-2">Área 1</div>
+      <div class="borda col-2">Área 2</div>
+      <div class="borda col-2">Área 3</div>
+    </div>
+    <br>
+    <h3>Sem espaçamento (no-gutters)</h3>
+    <div class="row no-gutters">
+      <div class="borda col-2">Área 1</div>
+      <div class="borda col-2">Área 2</div>
+      <div class="borda col-2">Área 3</div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
