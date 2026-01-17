@@ -3227,7 +3227,7 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto accusamus, dicta commodi delectus nesciunt a? Dolorem officiis consectetur ut non eos repellendus beatae. Iste non hic ipsa culpa suscipit eveniet!</p>
         <button class="btn btn-warning">Leia mais</button>
       </div>
-      
+
       <div class="marcador col-md-6 col-lg-4">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto accusamus, dicta commodi delectus nesciunt a? Dolorem officiis consectetur ut non eos repellendus beatae. Iste non hic ipsa culpa suscipit eveniet!</p>
@@ -3242,6 +3242,74 @@
     </div>
     <div class="row marcador">
       Rodapé
+    </div>
+  </div>
+  <br>
+  <br>
+  <h1>Configurações do Grid</h1>
+  <div class="container marcador-container">
+    <h2>Largura fixa</h2>
+    <!--o conteudo não fica empilhado em um canto, ele acaba se estendendo para toda a área do grid-->
+    <div class="row">
+      <div class="marcador col">área 1</div>
+      <div class="marcador col">área 2</div>
+      <div class="marcador col">área 3</div>
+      <div class="marcador col">área 4</div>
+    </div>
+    <br>
+    <h2>Largura automatica (auto-layout)</h2>
+    <!--é definido uma largura especifica para cada área dentro do grid, e ela se adecua conforme o tamanho da tela-->
+    <div class="row">
+      <div class="marcador col">área 1</div>
+      <div class="marcador col-4">área 2</div>
+      <div class="marcador col-6">área 3</div>
+    </div>
+    <br>
+    <h2>Largura igual empilhada</h2>
+    <!--esta configuração serve para empilhar as áreas do grid dependendo do tamanho de tela-->
+    <div class="row">
+      <div class="marcador col-md">área 1</div>
+      <div class="marcador col-md">área 2</div>
+      <div class="marcador col-md">área 3</div>
+      <div class="marcador col-md">área 4</div>
+    </div>
+    <br>
+    <h2>Ordenando</h2>
+    <!--ordenando as áreas no grid com configurações simples (order-)-->
+    <div class="row">
+      <div class="marcador col-md-3 order-2">área 1</div>
+      <div class="marcador col-md-3 order-3">área 2</div>
+      <div class="marcador col-md-3 order-1">área 3</div>
+      <div class="marcador col-md-3 order-4">área 4</div>
+    </div>
+    <br>
+    <h2>Offset</h2>
+    <div class="row">
+      <div class="marcador col-md-6">Login...</div>
+      <div class="marcador col-md-6 offset-md-1">Login...</div>
+      <div class="marcador col-md-6 offset-md-2">Login...</div>
+      <div class="marcador col-md-6 offset-md-3">Login...</div>
+    </div>
+    <br>
+    <h2>Offset múltiplos alinhamentos</h2>
+    <div class="row">
+      <div class="marcador col-md-3 offset-md-3">Conteudo 1</div>
+      <div class="marcador col-md-3 offset-md-3">Conteudo 2</div>
+    </div>
+    <div class="row">
+      <div class="marcador col-md-3">Conteudo 3</div>
+      <div class="marcador col-md-3 offset-md-6">Conteudo 4</div>
+    </div>
+    <h2>Aninhamento</h2>
+    <div class="row">
+      <div class="col-md-6" style="border: 1px solid blue;">
+        col-md-6
+        <div class="row">
+          <div class="col-md-4 marcador">Conteúdo 1</div>
+          <div class="col-md-6
+           marcador">Conteúdo 2</div>
+        </div>
+      </div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
