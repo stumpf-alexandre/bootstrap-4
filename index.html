@@ -3317,34 +3317,50 @@
   <h1>Alinhamento no Grid</h1>
   <br>
   <div class="container">
-    <h2>Alinhamento vertical(align-items-ALINHAMENTO: start, center, end)</h2>
-    <h3>Alinhando no topo do container</h3>
+    <h2>Alinhamento vertical(align-items-ALINHAMENTO: start, center, end, baseline e stretch)</h2>
+    <h3>Alinhando no topo do container (start)</h3>
     <div class="marcadores row align-items-start">
       <div class="col borda">Área 1</div>
       <div class="col borda">Área 2</div>
       <div class="col borda">Área 3</div>
     </div>
     <br>
-    <h3>Alinhando no centro do container</h3>
+    <h3>Alinhando no centro do container (center)</h3>
     <div class="marcadores row align-items-center">
       <div class="col borda">Área 1</div>
       <div class="col borda">Área 2</div>
       <div class="col borda">Área 3</div>
     </div>
     <br>
-    <h3>Alinhando na base do container</h3>
+    <h3>Alinhando na base do container (end)</h3>
     <div class="marcadores row align-items-end">
       <div class="col borda">Área 1</div>
       <div class="col borda">Área 2</div>
       <div class="col borda">Área 3</div>
     </div>
     <br>
-    <h2>Alinhamento vertical individual(align-self-ALINHAMENTO: start, center, end)</h2>
+    <h3>Alinhamento da linha base do texto (baseline)</h3>
+    <div class="marcadores row align-items-baseline">
+      <div class="col borda" style="padding-top: 30px;">Área 1</div>
+      <div class="col borda">Área 2</div>
+      <div class="col borda" style="padding-bottom: 50px;">Área 3</div>
+    </div>
+    <br>
+    <h3>Alinhamento da linha base do texto (stretch)</h3>
+    <div class="marcadores row align-items-stretch">
+      <div class="col borda">Área 1</div>
+      <div class="col borda">Área 2</div>
+      <div class="col borda">Área 3</div>
+    </div>
+    <br>
+    <h2>Alinhamento vertical individual(align-self-ALINHAMENTO: start, center, end, baseline e stretch)</h2>
     <h3>Alinhamento individual dos flex items</h3>
     <div class="marcadores row">
       <div class="col borda align-self-start">Área 1 alinhada no topo</div>
       <div class="col borda align-self-center">Área 2 alinhada no centro</div>
       <div class="col borda align-self-end">Área 3 alinhada na base</div>
+      <div class="col borda align-self-baseline">Área 4 alinhada na base do texto</div>
+      <div class="col borda align-self-stretch">Área 5 alinha ocupando toda a área</div>
     </div>
     <br>
     <h2>Alinhamento horizontal colunas(justify-content-ALINHAMENTO: start, center, end)</h2>
@@ -3398,6 +3414,41 @@
       <div class="borda col-2">Área 2</div>
       <div class="borda col-2">Área 3</div>
     </div>
+  </div>
+  <br>
+  <br>
+  <h1>Classes do Flexbox</h1>
+  <br>
+  <div class="container">
+    <h2>Flex container e flex itens (d-flex, flex-row, flex-column, flex-row-reverse, flex-column-reverse)</h2>
+    <h3>Flex-row</h3>
+    <div class="caixa d-flex flex-row">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <br>
+    <h3>Flex-column</h3>
+    <div class="caixa d-flex flex-column">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <br>
+    <h3>Flex-row-reverse</h3>
+    <div class="caixa d-flex flex-row-reverse">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <br>
+    <h3>Flex-column-reverse</h3>
+    <div class="caixa d-flex flex-column-reverse">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <br>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
